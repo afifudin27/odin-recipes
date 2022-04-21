@@ -7,6 +7,10 @@ grey: #4A4A4A
 black: #000000
 white: #F7F3EF
 
+font-family: 'BioRhyme', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Epilogue', sans-serif;
+
 */
 
 body{
@@ -54,4 +58,77 @@ body{
     color: #4A4A4A;
     margin-top: 2em;
 
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-container *{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card{
+    height: 200px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 40%;
+    /* align-items: center; */ 
+    /* background-color: red; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 30px;
+    margin: 20px;
+    border: 2px solid #4A4A4A;
+    transition: 0.2s ease-in;
+}
+
+.card:hover{
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    box-shadow: 10px 10px 0px #E57B07;
+}
+
+.card *{
+    padding: 15px;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* THIS IS FOR DEBUGGING */
+.content-text{
+    /* background-color: green; */
+    font-family: Epilogue, sans-serif;
+}
+
+.content-text{
+    margin: 0;
+}
+
+.content-text h3{
+    font-size: 48px;
+    font-weight: 700px;
+    height: 15px;
+    /* background-color: yellow; */
+    color: #E57B07;
+    letter-spacing: 2px;
+}
+
+.content-text p{
+    font-size: 18px;
+    color: #4A4A4A;
+    line-height: 1.5em;
+}
+
+.content-text a{
+    color: #f09f48fa;
+    text-decoration: none;
 }
